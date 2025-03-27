@@ -10,6 +10,7 @@ name: Build adev for preview deployment
 on:
   pull_request:
     types: [synchronize, labeled]
+  workflow_dispatch:
 
 permissions: read-all
 
