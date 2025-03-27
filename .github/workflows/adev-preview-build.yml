@@ -16,7 +16,7 @@ permissions: read-all
 
 jobs:
   adev-build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     if: |
       (github.event.action == 'labeled' && github.event.label.name == 'adev: preview') ||
       (github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'adev: preview'))
